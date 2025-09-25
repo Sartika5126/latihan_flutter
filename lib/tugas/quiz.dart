@@ -14,7 +14,7 @@ class Quiz extends StatelessWidget {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   "Training",
                   style: TextStyle(
@@ -28,12 +28,11 @@ class Quiz extends StatelessWidget {
                 ),
               ],
             ),
-
             SizedBox(height: 65),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   "Your Program",
                   style: TextStyle(
@@ -56,13 +55,54 @@ class Quiz extends StatelessWidget {
               width: double.infinity,
               height: 200,
               decoration: const BoxDecoration(
-                color: Colors.purpleAccent,
+                gradient: LinearGradient(
+                  colors: [Colors.purple, Color.fromARGB(255, 236, 197, 243)],
+                  begin: AlignmentGeometry.topLeft,
+                  end: AlignmentGeometry.bottomRight
+                ),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(120),
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20),
                 ),
+              ),
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Next Workout",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          "Lest Toning",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          "and Glutes Workout",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),)
+                ],
               ),
             ),
           ],
