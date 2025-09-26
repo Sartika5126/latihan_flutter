@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_flutter/latihan/pages/page_2.dart';
+//import 'package:latihan_flutter/latihan/pages/page_2.dart';
 //import 'package:latihan_flutter/latihan/latihan_layout2.dart';
 //import 'package:latihan_flutter/latihan/pages/page_1.dart';
-import 'package:latihan_flutter/latihan/pages/page_1.dart';
+//import 'package:latihan_flutter/latihan/pages/page_1.dart';
 import 'package:latihan_flutter/tugas/quiz.dart';
 //import 'package:latihan_flutter/latihan/ekspanded.dart';
 //import 'package:latihan_flutter/latihan/gambar.dart';

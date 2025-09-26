@@ -99,9 +99,47 @@ class Quiz extends StatelessWidget {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
-                        )
+                        ),
                       ],
-                    ),)
+                    ),
+                  ),
+                  Align(
+                    alignment: AlignmentGeometry.bottomCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: const [
+                              Icon(Icons.access_time_filled,
+                              color: Colors.white,
+                              size: 18),
+                              SizedBox(width: 6),
+                              Text(
+                                "60 min",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14
+                                ),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            width: 44,
+                            height: 44,
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.all(Radius.circular(100)),
+                            ),
+                            child: const Icon(Icons.play_arrow,
+                                      color: Colors.purple
+                                  ),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
