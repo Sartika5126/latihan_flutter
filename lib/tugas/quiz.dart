@@ -17,15 +17,9 @@ class Quiz extends StatelessWidget {
               children: [
                 Text(
                   "Training",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
-                Icon(
-                  Icons.calendar_today_outlined,
-                  color: Colors.black,
-                ),
+                Icon(Icons.calendar_today_outlined, color: Colors.black),
               ],
             ),
             SizedBox(height: 25),
@@ -35,10 +29,7 @@ class Quiz extends StatelessWidget {
               children: [
                 Text(
                   "Your Program",
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
                 Text(
                   "Details",
@@ -58,7 +49,7 @@ class Quiz extends StatelessWidget {
                 gradient: LinearGradient(
                   colors: [Colors.purple, Color.fromARGB(255, 236, 197, 243)],
                   begin: AlignmentGeometry.topLeft,
-                  end: AlignmentGeometry.bottomRight
+                  end: AlignmentGeometry.bottomRight,
                 ),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20),
@@ -77,10 +68,7 @@ class Quiz extends StatelessWidget {
                       children: [
                         Text(
                           "Next Workout",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 14),
                         ),
                         SizedBox(height: 4),
                         Text(
@@ -106,21 +94,26 @@ class Quiz extends StatelessWidget {
                   Align(
                     alignment: AlignmentGeometry.bottomCenter,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16.0,
+                        vertical: 20.0,
+                      ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             children: const [
-                              Icon(Icons.access_time_filled,
-                              color: Colors.white,
-                              size: 18),
+                              Icon(
+                                Icons.access_time_filled,
+                                color: Colors.white,
+                                size: 18,
+                              ),
                               SizedBox(width: 6),
                               Text(
                                 "60 min",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 14
+                                  fontSize: 14,
                                 ),
                               ),
                             ],
@@ -130,16 +123,19 @@ class Quiz extends StatelessWidget {
                             height: 44,
                             decoration: const BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.all(Radius.circular(100)),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(100),
+                              ),
                             ),
-                            child: const Icon(Icons.play_arrow,
-                                      color: Colors.purple
-                                  ),
-                          )
+                            child: const Icon(
+                              Icons.play_arrow,
+                              color: Colors.purple,
+                            ),
+                          ),
                         ],
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -157,17 +153,12 @@ class Quiz extends StatelessWidget {
                     left: 0,
                     top: 0,
                     bottom: 0,
-                    child: Image.asset(
-                      "gambar/card.jpg",
-                      fit: BoxFit.cover,
-                    ),
+                    child: Image.asset("gambar/card.jpg", fit: BoxFit.cover),
                   ),
                   Positioned(
                     left: 10,
                     bottom: 10,
-                    child: Image.asset(
-                      "gambar/figure.png",
-                    ),
+                    child: Image.asset("gambar/figure.png"),
                   ),
                   Align(
                     alignment: Alignment.centerRight,
@@ -188,33 +179,25 @@ class Quiz extends StatelessWidget {
                           SizedBox(height: 4),
                           Text(
                             "keep it up",
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 14,
-                            ),
+                            style: TextStyle(color: Colors.grey, fontSize: 14),
                           ),
                           Text(
                             "stick to your plan",
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 14,
-                            ),
-                          )
+                            style: TextStyle(color: Colors.grey, fontSize: 14),
+                          ),
                         ],
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 20),
             Text(
               "Area of Focus",
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: 12),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -226,16 +209,25 @@ class Quiz extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Center(
-                      child: Image.asset(
-                        "gambar/ex3.png",
-                        height: 80,
-                      ),
+                      child: Image.asset("gambar/ex3.png", height: 120),
+                    ),
+                  ),
+                ),
+                SizedBox(width: 16),
+                Expanded(
+                  child: Container(
+                    height: 120,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Center(
+                      child: Image.asset("gambar/ex4.png", height: 120),
                     ),
                   ),
                 ),
               ],
-            )
-            
+            ),
           ],
         ),
       ),
