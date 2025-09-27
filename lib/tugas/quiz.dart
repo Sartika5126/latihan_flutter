@@ -8,7 +8,7 @@ class Quiz extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 241, 239, 239),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 65),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -28,7 +28,7 @@ class Quiz extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 65),
+            SizedBox(height: 25),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -143,7 +143,7 @@ class Quiz extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 25),
+            SizedBox(height: 15),
             Container(
               width: double.infinity,
               height: 140,
@@ -201,12 +201,29 @@ class Quiz extends StatelessWidget {
                             ),
                           )
                         ],
-                      ),),
+                      ),
+                    ),
                   )
                 ],
               ),
-            )
-            
+            ),
+            SizedBox(height: 10),
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(
+                          "gambar/ex3.png"),
+                          ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
