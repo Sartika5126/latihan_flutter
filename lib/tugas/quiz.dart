@@ -208,22 +208,34 @@ class Quiz extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Container(
-              child: Row(
-                children: [
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(
-                          "gambar/ex3.png"),
-                          ),
-                    ),
-                  ),
-                ],
+            Text(
+              "Area of Focus",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
               ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Container(
+                    height: 120,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Center(
+                      child: Image.asset(
+                        "gambar/ex3.png",
+                        height: 80,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
+            
           ],
         ),
       ),
